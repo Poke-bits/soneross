@@ -1,0 +1,862 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(168, 97, 211), rgb(97, 23, 141));
+    animation: gradientAnimation 4s ease-in-out infinite;
+    background-size: 300% 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.imgLogo {
+    max-width: 100%;
+}
+
+.formBox {
+    display: flex;
+    height: auto;
+    width: 90%;
+    max-width: 940px;
+    background-color: #F1F1F1;
+    padding: 42px 100px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, 0.14);
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.labelnome,
+.labelsobrenome,
+.labelemail,
+.labelclinica {
+    color: #4B4B4B;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 8px;
+    width: 90%;
+    max-width: 237px;
+    height: 16px;
+}
+
+
+
+
+.botao {
+    height: 48px;
+    width: 90%;
+    max-width: 180px;
+    background-color: rgb(168, 97, 211);
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.14);
+    cursor: pointer
+}
+
+.botaoCategoria {
+    display: flex;
+    min-width: 93px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: 24px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    background-color: #e8e8e8;
+    border-color: rgba(168, 97, 211, 0.5);
+    color: #4B4B4B;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    margin-bottom: 4%;
+}
+
+.botaoImpacto {
+
+    display: inline-block;
+    width: 90%;
+    max-width: 32px;
+    height: 18px;
+    border-radius: 12px;
+    background-color: #A861D3;
+    background: #D1D1D1;
+    border-style: solid;
+    border-width: 0px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.botaoImpactoSelecionado {
+
+    display: inline-flex;
+    width: 90%;
+    max-width: 32px;
+    height: 18px;
+    border-radius: 12px;
+    background-color: #A861D3;
+    border-style: solid;
+    border-width: 0px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.botaoCategoria:active {
+    background-color: #A861D3;
+    color: white
+}
+
+.botaoCategoriaSelecionado {
+    background-color: #A861D3;
+    color: white
+}
+
+.botao:hover {
+    background-color: rgb(97, 23, 141);
+}
+
+.btnVoltar {
+    width: 90%;
+    max-width: 139px;
+    height: 39px;
+    flex-shrink: 0;
+    position: absolute;
+    margin: -15px 830px 3px 30px;
+    border: 0px;
+    color: #9E9E9E;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.groupBotaoCategoria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 720px;
+    height: 175px;
+    margin: 64px 154px 42px 154px;
+    justify-content: center;
+
+}
+
+
+.inputField {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 0rem;
+    width: 100%;
+    min-width: 200px;
+    max-width: 720px;
+    margin-left: 4%;
+    justify-items: start;
+    margin-top: 5%;
+    margin-bottom: -5%;
+
+
+
+}
+
+/* .inputField div {
+    display: grid;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    align-items: center;
+    justify-items: start;
+
+
+
+
+} */
+
+.inputField input {
+
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 90%;
+    height: 52px;
+    background: #d9d9d9;
+    border: #c4c4c4 1px solid;
+    -webkit-text-emphasis-color: #c9c9c9;
+    text-emphasis-color: #c9c9c9;
+    border-radius: 12px;
+    text-indent: 24px;
+    text-align: left;
+    max-width: 360px;
+    width: 318px;
+    margin-bottom: 62px;
+    margin-top: 4px;
+
+}
+
+
+.divImpacto {
+    margin-top: 5%;
+    justify-content: center;
+    min-width: 200px;
+    height: auto;
+
+}
+
+.spanImpacto {
+    display: flex;
+    width: 90%;
+    max-width: 90px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    color: #A861D3;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.825px;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 25%;
+}
+
+.requerido {
+    color: rgb(168, 97, 211);
+}
+
+.inputField input:hover {
+    border: rgb(168, 97, 211) 2px solid;
+
+}
+
+
+
+
+
+
+/* Adicione isso ao seu arquivo de estilos (styles.css) */
+
+.warnings {
+    margin-bottom: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(168, 97, 211);
+    margin-top: 3%;
+    display: block;
+    text-align: center;
+}
+
+.group1 {
+    display: flex;
+
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 2%;
+
+    /* Centraliza os elementos no eixo horizontal */
+
+    /* Adiciona um espaço entre os grupos */
+}
+
+.group2 {
+    display: flex;
+
+    align-items: center;
+    text-align: justify;
+
+    /* Centraliza os elementos no eixo horizontal */
+
+    /* Adiciona um espaço entre os grupos */
+}
+
+.img1,
+.img2 {
+    margin-right: 1%;
+    /* Garante que as imagens não ultrapassem o tamanho da coluna */
+}
+
+
+.p2 {
+
+
+    /* Remove margens para evitar espaçamentos indesejados */
+}
+
+.p1 {}
+
+.titulo {
+    font-size: 22px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    padding-top: 18px;
+    padding-bottom: 24px;
+    color: #474747;
+}
+
+.iconsup {
+    padding-bottom: 24px;
+}
+
+
+.subtitle,
+.subtitleImpacto {
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: #A9A9A9;
+}
+
+.subtitleEnviar {
+    color: #A861D3;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    width: 1000px;
+    height: 18px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editor {
+
+    margin-right: 10%;
+    border-radius: 12px;
+    border: 1px solid rgba(168, 97, 211, 0.50);
+    background: #FFF;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.07);
+    margin-bottom: -7%;
+    width: 55vw;
+    height: 30vh;
+    margin-top: -27%;
+
+}
+
+.inptTitulo {
+
+    width: 100%;
+    max-width: 900px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid rgba(168, 97, 211, 0.50);
+    background: #FDFAFF;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.07);
+    margin-bottom: 10px;
+
+    font-size: 14spx;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 16px;
+    font-family: 'roboto';
+    margin-top: -14%;
+
+}
+
+
+
+.divCaixaTexto {
+    display: grid;
+    justify-content: center;
+    width: 64vw;
+    height: 60vh;
+
+
+}
+
+.lblTitulo {
+    width: 90%;
+    max-width: 309px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #4B4B4B;
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 14px;
+
+    margin-top: 6%;
+
+
+}
+
+.lblDescricao {
+    width: 90%;
+    max-width: 309px;
+    height: 18px;
+    color: #4B4B4B;
+    font-family: 'roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
+    margin-top: -17%;
+}
+
+.dropzone {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #A861D3;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.07);
+    margin-top: -7%;
+    margin-bottom: 7%;
+    transition: height 0.2s ease;
+    margin-top: 12px;
+
+}
+
+
+.dropzone p {
+    flex: 1;
+    color: #F1F1F1;
+    font-family: 'roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22%;
+
+}
+
+.filesAside {
+    margin-top: -5%;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    text-align: center;
+}
+
+.divAcptBtn {
+    display: inline-grid;
+
+}
+
+.fileAcptBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22%;
+    border-radius: 12px;
+    margin-left: 0px;
+    height: 32px;
+    border: 1px solid rgba(168, 97, 211, 0.50);
+    color: #A861D3;
+    background-color: #F1F1F1;
+    padding-left: 5px;
+    padding-right: 15px;
+    min-width: 152px;
+    flex-wrap: nowrap;
+    margin-top: 38px;
+    margin-right: 18px;
+}
+
+.lblAcptFile {
+    flex: 1;
+    align-self: stretch;
+    padding-top: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.lblRjctFile {
+    align-self: center;
+    padding-top: 3px;
+    margin-left: 5px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 1;
+
+    margin-top: 30px;
+    /* Inicialmente, o tooltip fica um pouco abaixo */
+}
+
+
+.tooltip.top {
+    bottom: 100%;
+    left: 50%;
+
+}
+
+.tooltip:hover {
+    opacity: 1;
+
+    /* Animação para a posição final */
+}
+
+.fileRjctBtn {
+    display: flex;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22%;
+    border-radius: 12px;
+    margin-left: 0px;
+    height: 32px;
+    border: 1px solid rgba(168, 97, 211, 0.50);
+    color: #E55;
+    background-color: #F1F1F1;
+    padding-left: 5px;
+    padding-right: 15px;
+    min-width: 152px;
+    max-width: 151px;
+    margin-top: 28px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-bottom: 4px;
+    align-items: flex-end;
+
+}
+
+.imgRjct {
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+.imgRemove {
+    width: 20px;
+    height: 15px;
+    margin-right: -10px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.imgRemoveNone {
+    display: none;
+}
+
+.acptBtnLink {
+    background-color: red;
+    height: 100px;
+    cursor: pointer;
+}
+
+.uploadBtn {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: #A861D3;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22%;
+    margin-right: 5%;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    padding-left: 20px;
+    cursor: pointer;
+
+
+}
+
+.imgAnexo {
+    margin-left: 3%;
+    margin-right: 1%;
+    max-width: 100%;
+    border: 0;
+
+}
+
+.lblCodigoChamado {
+    display: flex;
+    width: 1000px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    color: #4B4B4B;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 40px;
+}
+
+.lblAgradecimentoChamado {
+    display: flex;
+    width: 1000px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    color: #A861D3;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 60px;
+}
+
+.lblInfosGerais {
+    width: 613px;
+    height: 47px;
+    color: #4B4B4B;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 32px;
+
+}
+
+.lblAgradecimentoSuporte {
+    width: 1000px;
+    height: 21px;
+    flex-shrink: 0;
+    color: #A861D3;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 32px;
+    margin-bottom: 101px;
+
+}
+
+.labelclinica {
+    position: absolute;
+    top: 500px;
+}
+
+/* aqui jas o css do "select" */
+.divClinica {
+    display: 'flex';
+
+    height: 93px;
+}
+
+
+.imgDropDownDown {
+    flex: 1;
+    position: relative;
+    bottom: 294%;
+    left: 84%;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.divClinica input {}
+
+.dropDownDiv {
+    position: relative;
+
+    max-height: 160px;
+    overflow: auto;
+    border-radius: 12px;
+    background: #FFFF;
+    box-shadow: 4px 4px 18px 3px rgba(0, 0, 0, 0.18);
+    width: 313px;
+    margin-bottom: 0%;
+    margin-top: -31%;
+}
+
+.dropDownList {
+    position: relative;
+    max-width: 300px;
+    color: #4B4B4B;
+    font-family: 'roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 40px;
+    padding-left: 33px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.dropDownList:hover {
+    background: rgba(126, 62, 165, 0.23);
+}
+
+.dropDownDiv::-webkit-scrollbar {
+    background: #FFF;
+    width: 8px;
+    border-radius: 12px;
+    padding: 10px;
+
+}
+
+.dropDownDiv::-webkit-scrollbar-thumb {
+    background: #A861D3;
+    border-radius: 12px;
+    margin-left: 10%;
+
+
+
+
+}
+
+
+
+.selectDivExterna {
+
+    display: grid;
+
+    margin-top: 20px;
+}
+
+.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.desaparecer {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+
+/* Estilos para telas com 1300 pixels ou mais */
+@media screen and (min-width: 1300px) {
+    .divCaixaTexto {
+
+        width: 100%;
+        height: 39vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        margin-top: 24px;
+    }
+
+    .inptTitulo,
+    .lblTitulo,
+    .lblDescricao,
+    .editor,
+    .dropzone {
+
+        /* Agora, todos os elementos ocupam 100% da largura da divCaixaTexto */
+        text-align: initial;
+        /* Garante que a largura máxima seja 100% */
+        margin: 4px 0;
+
+        /* Adicionei um pequeno espaço entre os elementos */
+    }
+
+
+
+
+    .lblTitulo,
+    .lblDescricao {
+        text-align: initial;
+        margin-right: 57%;
+        margin-top: 18px;
+        /* Centraliza o texto */
+    }
+
+    .editor {
+        max-width: 100%;
+        /* Agora, o editor pode ocupar 100% da largura da divCaixaTexto */
+    }
+
+    .dropzone {
+
+
+        margin-right: 149px;
+        margin-top: 28px;
+        margin-bottom: 10px;
+    }
+
+    .inputField input,
+    .inputField select {
+        max-width: 360px;
+        width: 318px;
+
+    }
+
+
+
+
+
+}

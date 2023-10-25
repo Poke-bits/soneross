@@ -1,3 +1,0 @@
-# sonerosproject
-# Teste
-# c

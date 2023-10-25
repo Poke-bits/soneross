@@ -2,6 +2,7 @@ const Upload = require('../../models/Upload')
 const Formulario = require('../../models/Formulario')
 const storageS3 = require('../../config/storageS3')
 async function upload(req, res) {
+    console.log("asdasd ")
     try {
         const upload = await Upload.create({
             imgName: req.file.originalname,
@@ -12,7 +13,7 @@ async function upload(req, res) {
         return res.json(upload)
     } catch (error) {
 
-        return res.status(500).json({ error: "erro ao fazer upload "+error })
+        return res.status(500).json({ error: "erro ao fazer upload " + error })
     }
 
 }
@@ -54,14 +55,14 @@ async function deletar(req, res) {
         const resultDelete = await Upload.deleteOne({ _id: id })
 
         if (resultDelete.deletedCount > 0) {
-          
+
             const params = {
                 Bucket: process.env.AWS_BUCKET_NAME,
                 Key: result.key
             };
             storageS3.deleteObject(params, (err, data) => {
                 if (err) {
-                    console.log(err,"error");
+                    console.log(err, "error");
                 } else {
                     console.log("Arquivo deletado do S3");
                 }

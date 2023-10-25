@@ -3,7 +3,6 @@ const multerS3 = require('multer-s3')
 const storageS3 = require('../config/storageS3')
 require('dotenv').config()
 
-console.log("heueu")
 const multerConfig = {
    storage: multerS3({
       s3: storageS3,

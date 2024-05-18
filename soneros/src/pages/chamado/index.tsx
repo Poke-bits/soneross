@@ -142,12 +142,13 @@ export default function TelaChamado() {
 
         if (terceiraEtapa) {
             const handleEnviar = async (dados: formTemplate, atualizarCamposHandler: any, e: any) => {
-                const result = await api.post('/formulario', dados)
+            
+                const result = await api.post('/utilitys/formulario', dados);
 
-                atualizarCamposHandler('codigo', result.data)
+                atualizarCamposHandler('codigo', result.data);
 
-                mudancaStep(etapaAtual + 1, e, formTemplate)
-                limparLocalStorage
+                mudancaStep(etapaAtual + 1, e, formTemplate);
+                limparLocalStorage();
 
             }
             return (
@@ -192,5 +193,5 @@ export default function TelaChamado() {
 
                 </div>
             </div>
-        </>);
+        </>); 
 }

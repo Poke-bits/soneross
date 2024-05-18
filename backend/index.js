@@ -12,5 +12,6 @@ class StartServer {
         this.http()
        this.database()
     }
+    
 }
 new StartServer ()

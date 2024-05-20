@@ -1,0 +1,30 @@
+
+.overviewContainer {
+    margin: 20px;
+}
+
+.overviewTitle {
+    font-size: 2em;
+    font-weight: bold;
+    color: #A861D3;
+    margin: 0;
+}
+
+.overviewSubtitle {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0;
+}
+
+.dropdownIcon {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.overviewDate {
+    font-size: 0.9em;
+    color: #888;
+}

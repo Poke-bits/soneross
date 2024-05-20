@@ -16,8 +16,10 @@
     "aws-sdk": "^2.1460.0",
     "axios": "^1.5.1",
     "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.3",
     "cors": "^2.8.5",
     "d3": "^7.8.5",
+    "date-fns": "^3.6.0",
     "dotenv": "^16.3.1",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
@@ -35,6 +37,7 @@
     "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.45.4",
     "react-quill": "^2.0.0",
+    "styled-components": "^6.1.11",
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
